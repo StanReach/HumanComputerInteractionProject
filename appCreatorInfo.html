@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="appStyle.css">
+<link rel="stylesheet" href="background.css">
+<title>app Creators Adam and Aoki</title>
+</head>
+<body>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="appHomePage.html">Home</a>
+  <a href="appSunburnInfo.html">Sunburn Info</a>
+  <a href="loginPage.html">Forum</a>
+  <a href="appCreatorInfo.html">Creators Info</a>
+  <a href="appLayout.html">UV Timer</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+  <div class="column">
+    <div class="card">
+      <img src="randomGuy1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>ADAM</h2>
+        <p class="title">Creator</p>
+		<p>I believe that the latest technology intergrated into clothing is the next step in making our lives better</p>
+        <p>example@example.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="randomGuy2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>AOKI</h2>
+        <p class="title">Creator</p>
+		<p>I am motivated to bring easy access to looking after your skin using the next generation of technology</p>
+        <p>example@example.com</p>
+      </div>
+    </div>
+</div>
+
+
+</body>
+</html>

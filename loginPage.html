@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="appStyle.css">
+<link rel="stylesheet" href="background.css">
+<title>Forum Login Page</title>
+</head>
+<body>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="appHomePage.html">Home</a>
+  <a href="appSunburnInfo.html">Sunburn Info</a>
+  <a href="loginPage.html">Forum</a>
+  <a href="appCreatorInfo.html">Creators Info</a>
+  <a href="appLayout.html">UV Timer</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<div>
+<form action="/action_page.php">
+  <div class="imgcontainer">
+    <img src="facelessAvartar.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <a href="appForum.html">Submit</a>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+</form>
+</div>
+
+</body>
+</html>

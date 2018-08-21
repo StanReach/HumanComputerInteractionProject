@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="appStyle.css">
+<link rel="stylesheet" href="background.css">
+<title>UV timer</title>
+</head>
+<body>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 0;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width = width + 0.05; 
+      elem.style.width = width + '%'; 
+    }
+  }
+}
+</script>
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="appHomePage.html">Home</a>
+  <a href="appSunburnInfo.html">Sunburn Info</a>
+  <a href="loginPage.html">Forum</a>
+  <a href="appCreatorInfo.html">Creators Info</a>
+  <a href="appLayout.html">UV Timer</a>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<div style="text-align:center">
+  <span class="dotPaleSkin"></span>
+  <span class="dotLightSkin"></span>
+  <span class="dotTanSkin"></span>
+  <span class="dotDarkSkin"></span>
+</div>
+
+<div class="container">
+  <img src="sun.png" alt="Sun" style="width:100%;">
+  <div class="centered">
+  <h3>Temperature: 25 degrees</h3>
+  <h3>UV: 3</h3>
+  </div>
+</div>
+
+<div id="myProgress">
+  <div id="myBar"></div>
+</div>
+
+<div style="text-align:center">
+<button onclick="move()">Click Me</button> 
+</div>
+</body>
+</html> 
